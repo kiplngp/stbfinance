@@ -46,8 +46,8 @@ Stbfinance::Application.configure do
             :address              => 'smtp.gmail.com',
             :port                 => 587,
             :domain               => 'imap.gmail.com',
-            :user_name            => 'info@stbgroup.in',
-            :password             => 'stbgroup123!',
+            :user_name            => '<username>',
+            :password             => '<password>',
             :authentication       => 'login',
             :enable_starttls_auto => true
     }

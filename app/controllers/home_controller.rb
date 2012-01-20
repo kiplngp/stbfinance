@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   
+  # For contact and side enquiry   
   def contact
     if request.post? and params[:reset_password]
     	      if contact = Contact.new(params[:reset_password])
@@ -25,7 +26,7 @@ class HomeController < ApplicationController
     	     @title = "contacts"
   	     end
   	     
-  	     @meta_title = "STB Finance Service - Contact Us"
+  	     
   end
   
   def index

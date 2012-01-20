@@ -4,6 +4,7 @@ class SkillsController < ApplicationController
     @skill = Skill.find(params[:id])   
   end
   
+  # test your skill functionality related to education service.
   def skillemail
         if request.post? and params[:test_skills]
       	      if skillemail = Skillemail.new(params[:test_skills])
@@ -15,7 +16,7 @@ class SkillsController < ApplicationController
 
       	        if skillemail.save
 
-
+                # Email functionality manage by Admin
       	        Emailerskill.deliver_skill_email(skillemail)
 
                 flash[:notice] = "Thank you for sending a mail."
